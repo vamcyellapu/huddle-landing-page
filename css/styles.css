@@ -39,7 +39,12 @@ body {
 
 .logo {
   width: 200px;
+  margin: 5rem 5rem 0;
 
+}
+
+.mockup {
+  overflow: hidden;
 }
 
 .mockup__img {
@@ -78,4 +83,107 @@ body {
   margin: 3rem;
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.404);
+  transition: all .2s;
+}
+
+.btn:hover {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.content__social {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 5rem 0 2rem;
+
+
+}
+
+.fab {
+  display: inline-block;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.fab:hover {
+  color: var(--color-secondary);
+  border-color: var(--color-secondary)
+}
+
+.attribution {
+  text-align: center;
+  padding: 2rem 3rem;
+
+}
+
+.attribution a {
+  color: #fff;
+}
+
+.attribution a:hover {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background: url(/images/bg-desktop.svg);
+    background-color: var(--color-primary);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100%;
+    grid-template-rows: 1fr;
+    min-height: 100vh;
+  }
+
+  .container {
+    min-height: 100vh
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .content__heading {
+    margin-top: 5rem;
+    font-size: 5rem;
+    text-align: left;
+  }
+
+  .content__text {
+    text-align: left;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+
+  .content__social {
+
+    align-self: flex-end;
+    position: relative;
+    top: 50px;
+    right: 30px;
+  }
+
+  footer {
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+  }
 }
